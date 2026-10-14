@@ -330,6 +330,15 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
 .hist li:last-child{border-bottom:1px solid var(--hair)}
 .seg{margin-bottom:20px}
 @media (max-width:760px){.prof{grid-template-columns:1fr;gap:28px}.photo{width:min(100%,260px)}}
+
+/* ---- 교안 이미지 ---- */
+.shot{margin:0 auto 44px;max-width:880px}
+.shot img{display:block;width:100%;height:auto;border-radius:18px;background:var(--parchment)}
+.dark .shot img{background:#272729}
+.shot.hero-shot{margin:44px auto 0;max-width:820px;padding-inline:22px}
+.head+.shot{margin-top:-8px}
+.shot figcaption{margin-top:12px;text-align:center;font-size:14px;color:var(--ink48)}
+.dark .shot figcaption{color:var(--tile-muted)}
 </style>
 
 <div class="gnav"><div class="in"><span>AI Agent 활용 교육과정</span><span>바이브코딩 · AI 캔버스 워크플로우</span></div></div>
@@ -360,6 +369,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
       <a class="pill ghost" href="#sim">에이전트 미리보기</a>
     </div>
   </div>
+  <figure class="shot hero-shot"><img src="images/01.webp" alt="손님들이 휴대폰으로 남긴 별점 후기가 노트북의 사장님 화면으로 모이고, 로봇 모양의 AI 에이전트가 답글을 써서 손님에게 돌려보내는 한 바퀴" width="1536" height="1024" decoding="async"></figure>
   <div class="stage" aria-hidden="true">
     <div class="phone"><div class="scr">
       <div class="ttl">후기 남기기</div>
@@ -432,6 +442,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
     <div class="head">
       <h2>개발자 없이,<br>내 가게에 필요한 도구를 직접 만듭니다.</h2>
     </div>
+    <figure class="shot"><img src="images/02.webp" alt="사장님이 가게 벽의 홈에 직접 만든 별점 후기 화면 조각을 끼워 넣고, 크기가 맞지 않는 기성품 상자는 바닥에 놓여 있는 모습" width="1536" height="1024" loading="lazy" decoding="async"></figure>
     <div class="g3">
       <div class="card"><span class="kicker">내가 정한다</span><h3>필요한 것은 내가 가장 잘 압니다</h3><p>어떤 후기를 받고 싶은지, 어떤 답글을 쓰고 싶은지는 사장님이 가장 잘 압니다. 그 생각을 AI에게 그대로 말하면 됩니다.</p></div>
       <div class="card"><span class="kicker">직접 만든다</span><h3>말로 설명하면 만들어집니다</h3><p>바이브 코딩으로 후기 페이지를, 워크플로우 에이전트로 후기를 읽고 답글을 쓰는 일을 직접 만들어 봅니다.</p></div>
@@ -448,6 +459,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
       <h2>웹앱은 입구, 장부는 재료,<br>에이전트는 일꾼입니다.</h2>
       <p class="lead">두 가지를 따로 만들지 않습니다. 웹앱에서 모은 후기가 그대로 에이전트의 재료가 됩니다.</p>
     </div>
+    <figure class="shot"><img src="images/03.webp" alt="웹앱(입구)으로 들어온 후기가 장부(재료)에 정리되고, 에이전트(일꾼)가 분류하고 답글을 쓴 뒤 사장님이 확인하는 세 정거장" width="1536" height="1024" loading="lazy" decoding="async"></figure>
     <div class="flow">
       <div class="runner"></div>
       <div class="st"><span class="dot"></span><div class="k">바이브코딩</div><h3>손님이 후기를 남긴다</h3><p>별점, 드신 메뉴, 후기 글, 재방문 의향을 정해진 칸에 받습니다.</p></div>
@@ -486,6 +498,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
       <h2>구체적으로 말할수록<br>원하는 화면이 나옵니다.</h2>
       <p class="lead">같은 "후기 페이지"도 어떻게 부탁하느냐에 따라 전혀 다른 결과가 나옵니다. 두 요청을 바꿔 가며 비교해 보세요.</p>
     </div>
+    <figure class="shot"><img src="images/04.webp" alt="사장님이 화면 속 버튼을 바꾸며 HTML, CSS, JavaScript 손잡이가 달린 조종판에서 CSS 손잡이를 돌리는 모습" width="1536" height="1024" loading="lazy" decoding="async"></figure>
     <div class="seg" role="group" aria-label="요청 비교">
       <button type="button" id="cmpVague" aria-pressed="false">모호한 요청</button>
       <button type="button" id="cmpClear" aria-pressed="true">구체적인 요청</button>
@@ -522,9 +535,10 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
   <div class="wrap">
     <div class="head">
       <p class="eyebrow">웹앱 만들기 · 맛보기</p>
-      <h2>별점 하나로<br>한 바퀴 돌아봅니다.</h2>
+      <h2>별점 매기기부터<br>만들어 봅시다.</h2>
       <p class="lead">짧은 요청으로 만들고, 눌러 보고, 고쳐 달라고 다시 말하는 과정을 먼저 경험합니다.</p>
     </div>
+    <figure class="shot"><img src="images/05.webp" alt="사장님이 생각만 하던 룰렛, 스탬프 카드, 알림판, 계산기가 휴대폰 화면 안에서 완성된 모습으로 바뀌는 그림" width="1536" height="1024" loading="lazy" decoding="async"></figure>
     <div class="g2">
       <div class="pbox"><div class="bar"><span>맛보기 프롬프트</span><button class="ubtn" type="button" data-copy="tastePrompt">복사</button></div><pre id="tastePrompt">별점 5개를 누를 수 있는 작은 웹페이지를 만들어줘.
 파일 하나에 HTML, CSS, 자바스크립트를 모두 넣고 외부 라이브러리는 쓰지 마.
@@ -566,6 +580,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
       <h2>우리 가게 후기 웹앱을<br>프롬프트 한 장으로 만듭니다.</h2>
       <p class="lead">왼쪽 칸을 우리 가게에 맞게 고치면 오른쪽 프롬프트가 바로 바뀝니다. 다 고쳤으면 복사해서 AI에게 붙여넣으세요.</p>
     </div>
+    <figure class="shot"><img src="images/06.webp" alt="손님 화면(휴대폰 별점 입력)에서 사장님 화면(노트북)으로 후기가 들어오고, 장부 표가 출력되어 사장님이 받아 드는 모습" width="1536" height="1024" loading="lazy" decoding="async"></figure>
     <div class="builder">
       <form class="form" id="builderForm" onsubmit="return false">
         <div><label class="t" for="fStore">가게 이름</label><input class="inp" id="fStore" value="햇살담은 커피"></div>
@@ -600,6 +615,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
       <h2>증상을 고르면<br>고치는 말이 나옵니다.</h2>
       <p class="lead">당황하지 말고 지금 보이는 증상을 고르세요. 아래 문장을 그대로 복사해 AI에게 보내면 됩니다.</p>
     </div>
+    <figure class="shot"><img src="images/07.webp" alt="사장님이 끊긴 화면 부분을 가리키며 증상 카드를 건네고, 로봇이 망치 대신 렌치로 그 부분만 고치는 모습" width="1536" height="1024" loading="lazy" decoding="async"></figure>
     <div class="fix">
       <div class="symptoms" id="symptoms" role="group" aria-label="증상 선택"></div>
       <div>
@@ -641,6 +657,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
       <h2>장부를 구글 시트로 넘기면<br>에이전트가 읽을 수 있습니다.</h2>
       <p class="lead">웹앱이 잘 안 됐어도 괜찮습니다. 아래 예시 장부를 그대로 복사해서 쓰면 됩니다.</p>
     </div>
+    <figure class="shot"><img src="images/08.webp" alt="노트북에서 날아온 후기 표가 id, date, name, rating, menu, review, revisit 열이 있는 스프레드시트에 채워지고, 로봇이 바구니를 들고 기다리는 모습" width="1536" height="1024" loading="lazy" decoding="async"></figure>
     <div class="g2">
       <div class="steps">
         <div class="step"><span class="n">1</span><div><h3>표를 복사합니다</h3><p>사장님 화면에서 "구글 시트용 표 복사"를 누르거나, 오른쪽 아래 예시 장부의 "표 복사"를 누릅니다.</p></div></div>
@@ -684,6 +701,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
       <p class="eyebrow">워크플로우 에이전트 만들기</p>
       <p class="lead">AI 캔버스에서는 일을 잘게 나눠 블록(노드)에 맡기고, 앞 에이전트가 끝낸 결과를 다음 에이전트에게 선으로 넘깁니다.</p>
     </div>
+    <figure class="shot"><img src="images/09.webp" alt="데이터 블록에서 중복 후기가 걸러지고, 에이전트 프롬프트 블록에서 로봇이 태그와 답글을 붙인 뒤, 출력 블록에서 정리된 카드가 나오는 컨베이어" width="1536" height="1024" loading="lazy" decoding="async"><figcaption>데이터 블록 → 에이전트 프롬프트 블록 → 출력 블록</figcaption></figure>
     <div class="g3">
       <div class="card"><span class="kicker">데이터 블록</span><h3>장부를 가져오고 정리합니다</h3><p>구글 시트 불러오기, 필요한 열 고르기, 중복 지우기처럼 AI 없이도 되는 일입니다.</p></div>
       <div class="card"><span class="kicker">에이전트 프롬프트 블록</span><h3>AI 에이전트가 한 줄씩 읽습니다</h3><p>장부의 각 줄마다 프롬프트를 실행하고, 결과를 새 열에 적어 둡니다.</p></div>
@@ -737,6 +755,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
       <h2>{{ }} 자리에<br>장부의 한 줄이 들어갑니다.</h2>
       <p class="lead">AI 에이전트는 장부를 한 줄씩 읽습니다. 후기를 하나 골라 보면, 프롬프트의 빈칸이 그 줄의 값으로 채워지는 모습을 볼 수 있습니다.</p>
     </div>
+    <figure class="shot"><img src="images/10.webp" alt="장부 한 줄의 별, 커피잔, 말풍선 조각이 {{rating}}, {{menu}}, {{review}} 빈칸 틀에 들어가 줄마다 다른 답글 카드가 나오는 붕어빵 틀" width="1536" height="1024" loading="lazy" decoding="async"></figure>
     <div class="row" id="varRows" role="group" aria-label="후기 선택"></div>
     <div class="sp"></div>
     <div class="g2">
@@ -761,6 +780,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
       <h2>답글 말투를<br>우리 가게답게 바꿉니다.</h2>
       <p class="lead">답글 작성 에이전트의 프롬프트에서 말투 한 줄만 바꿔도 분위기가 달라집니다. 원하는 말투를 고르고 복사해서 블록에 다시 붙여넣으세요.</p>
     </div>
+    <figure class="shot"><img src="images/11.webp" alt="로봇이 다이얼을 돌려 같은 후기에 정중하게, 친근하게, 짧게, 내 말투 그대로 네 가지 답글을 만드는 모습" width="1536" height="1024" loading="lazy" decoding="async"></figure>
     <div class="seg" id="tones" role="group" aria-label="말투 선택"></div>
     <div class="sp"></div>
     <div class="pbox"><div class="bar"><span>답글 작성 에이전트 프롬프트</span><button class="ubtn" type="button" data-copy="tunePrompt">복사</button></div><pre id="tunePrompt"></pre></div>
@@ -780,6 +800,7 @@ footer .in{max-width:1180px;margin:0 auto;display:flex;justify-content:space-bet
       <p class="eyebrow">정리</p>
       <h2>모으는 건 웹앱이,<br>읽고 쓰는 건 에이전트가.</h2>
     </div>
+    <figure class="shot"><img src="images/12.webp" alt="영업을 마친 저녁 카페에서 사장님이 휴대폰으로 답글 초안을 확인하고, 카운터의 로봇이 후기 카드 묶음에 체크하는 모습" width="1536" height="1024" loading="lazy" decoding="async"></figure>
     <div class="sum">
       <div class="card"><div class="big">웹앱은 입구</div><p>손님 후기를 정해진 칸에 받아 흩어지지 않게 모읍니다.</p></div>
       <div class="card"><div class="big">장부는 재료</div><p>열 이름이 정해진 표 한 장이 에이전트가 읽고 일하는 재료가 됩니다.</p></div>
